@@ -48,23 +48,12 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(libs.kotlinx.coroutines.core)
-                api(libs.kotlinx.serialization.core) //todo can it be implementation?
-                api(libs.ktor.serialization.kotlinx.json)  //todo can it be implementation?
-                api(libs.koin.core)
+
             }
         }
 
         jsMain {
             dependencies {
-                api(libs.kotlinx.coroutines.core.js)
-                api(libs.kotlinx.serialization.json)
-
-                //Axios
-                api(kotlin("stdlib-js"))
-                api(libs.kotlin.stdlib.js)
-                api(npm("axios", "0.27.2"))
-                api(npm("axios-retry", "3.7.0"))
             }
         }
     }

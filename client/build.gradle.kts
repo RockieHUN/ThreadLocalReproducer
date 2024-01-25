@@ -60,18 +60,12 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(project(":core"))
-                implementation(libs.kotlinx.coroutines.core)
-                implementation(libs.kotlinx.serialization.core)
-                implementation(libs.ktor.serialization.kotlinx.json)
-                implementation(libs.koin.core)
+
             }
         }
 
         jsMain {
             dependencies {
-                //implementation(libs.stately.js)
-                implementation(libs.kotlinx.coroutines.core.js)
-                implementation(libs.kotlinx.serialization.json)
 
             }
         }
